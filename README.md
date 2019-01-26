@@ -2,7 +2,7 @@
 
 A new Flutter application that lets you to chat with your friends and post your pics..
 
-##Download
+## Download
 
 Visit : http://www.mediafire.com/file/4u0bvn0o0s0resu/gameOfChats.apk/file
 
