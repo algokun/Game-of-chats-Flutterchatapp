@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Flutter Plugins" type="FlutterPluginsLibraryType">
+    <CLASSES>
+      <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.4.12" />
+      <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/audioplayers-0.8.0" />
+      <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in-3.2.4" />
+      <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-0.4.1" />
+      <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore-0.8.2+3" />
+      <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-0.2.5+1" />
+      <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/simple_permissions-0.1.9" />
+      <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage-1.0.4" />
+      <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/fluttertoast-2.2.6" />
+      <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.6.6" />
+      <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_database-1.0.5" />
+      <root url="file://C:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_messaging-2.1.0" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

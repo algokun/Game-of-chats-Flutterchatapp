@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="C:/flutter/.pub-cache/hosted/pub.dartlang.org/audioplayers-0.8.0/android" />
+            <option value="C:/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore-0.8.2+3/android" />
+            <option value="C:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.6.6/android" />
+            <option value="C:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-0.2.5+1/android" />
+            <option value="C:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_database-1.0.5/android" />
+            <option value="C:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_messaging-2.1.0/android" />
+            <option value="C:/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage-1.0.4/android" />
+            <option value="C:/flutter/.pub-cache/hosted/pub.dartlang.org/fluttertoast-2.2.6/android" />
+            <option value="C:/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in-3.2.4/android" />
+            <option value="C:/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.4.12/android" />
+            <option value="C:/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-0.4.1/android" />
+            <option value="C:/flutter/.pub-cache/hosted/pub.dartlang.org/simple_permissions-0.1.9/android" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
