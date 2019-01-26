@@ -35,16 +35,15 @@ samples, guidance on mobile development, and a full API reference.
 <image-grid>
 
   <image-grid-item>
-    <img src="1.jpg"/>
+    <img src="https://user-images.githubusercontent.com/21126965/51789159-22982a80-21ac-11e9-97b2-1ff7ed43fd95.png"/>
   </image-grid-item>
-
-  <image-grid-item-link url="https://user-images.githubusercontent.com/21126965/51789159-22982a80-21ac-11e9-97b2-1ff7ed43fd95.png">
-    <img src="2.jpg"/>
-  </image-grid-item-link>
-
-  <image-grid-item-expand>
-    <img src="2.jpg"/>
-    <section><p>Additional content</p></section>
-  </image-grid-item-expand>
+  
+  <image-grid-item>
+    <img src="https://user-images.githubusercontent.com/21126965/51789159-22982a80-21ac-11e9-97b2-1ff7ed43fd95.png"/>
+  </image-grid-item>
+  
+  <image-grid-item>
+    <img src="https://user-images.githubusercontent.com/21126965/51789159-22982a80-21ac-11e9-97b2-1ff7ed43fd95.png"/>
+  </image-grid-item>
 
 </image-grid>
