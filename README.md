@@ -30,4 +30,10 @@ samples, guidance on mobile development, and a full API reference.
 
 ### Packages
 
-For More Information about Packages used in this project,you can check <a href = "">pubspec.yaml</a> file
+For More Information about Packages used in this project,you can check <a href = "https://github.com/mohanmonu777/Game-of-Chats/blob/master/pubspec.yaml">pubspec.yaml</a> file
+
+### Social
+
+Check out my social links..
+
+<a href = "https://www.facebook.com/sree.dhannu?"> <img src = "https://cdn2.iconfinder.com/data/icons/social-18/512/Facebook-3-512.png"> </a>
