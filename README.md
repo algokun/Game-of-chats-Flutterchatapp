@@ -2,6 +2,12 @@
 
 A new Flutter application that lets you to chat with your friends and post your pics..
 
+##Download
+
+Visit : http://www.mediafire.com/file/4u0bvn0o0s0resu/gameOfChats.apk/file
+
+minSDKVersion : 21
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
