@@ -1,6 +1,6 @@
 # flutter_chat_app
 
-A new Flutter application.
+A new Flutter application that lets you to chat with your friends and post your pics..
 
 ## Getting Started
 
