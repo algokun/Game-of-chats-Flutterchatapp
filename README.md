@@ -36,4 +36,4 @@ For More Information about Packages used in this project,you can check <a href =
 
 Check out my social links..
 
-<a href = "https://www.facebook.com/sree.dhannu?"> <img src = "https://cdn2.iconfinder.com/data/icons/social-18/512/Facebook-3-512.png" width = "30"> </a>
+<a href = "https://www.facebook.com/sree.dhannu?"> <img src = "https://cdn2.iconfinder.com/data/icons/social-18/512/Facebook-3-512.png" width = "30"> Facebook </a>
