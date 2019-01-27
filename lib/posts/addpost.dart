@@ -21,10 +21,14 @@ class _AddPostState extends State<AddPost> {
 
   final String uid , name , uImg;
 
+  bool isButtonEnable = true;
+
   _AddPostState({this.uid , this.name , this.uImg});
 
   TextEditingController _controller = TextEditingController();
   File _imageFile;
+
+  bool isProgressVisible = false;
 
   @override
   void dispose() {
@@ -41,24 +45,38 @@ class _AddPostState extends State<AddPost> {
         title: Text("Add Post"),
       ),
       bottomNavigationBar: Material(
-        color: Colors.green,
+        color: _imageFile != null ? Colors.green : Colors.grey,
         elevation: 10.0,
         child: Container(
           width: double.infinity,
           height: height / 12,
           child: FlatButton(
-              onPressed: () => writePost(),
+              onPressed: _imageFile != null ? (){
+                if(isButtonEnable){
+                  writePost();
+                }
+              }  : null,
               child: Text("Done" , style: TextStyle(color: Colors.white),)
           ),
         ),
       ),
       body: ListView(
         children: <Widget>[
+          Visibility(
+            visible: isProgressVisible,
+            child: LinearProgressIndicator(backgroundColor: Colors.redAccent,),
+          ),
           Container(
             height: MediaQuery.of(context).size.height / 2,
             child: GestureDetector(
               child: _imageFile == null ? Image.asset("assets/default.jpg" , fit: BoxFit.cover,) : Image.file(_imageFile , fit: BoxFit.cover,),
-              onTap: () => getImage(),
+              onTap: () {
+                getImage().then((value){
+                  setState(() {
+                    this.isProgressVisible = false;
+                  });
+                });
+              },
             ),
           ),
           Container(
@@ -87,6 +105,10 @@ class _AddPostState extends State<AddPost> {
     );
   }
   Future getImage() async {
+    setState(() {
+      isProgressVisible = true;
+    });
+
     CompressImage compressImage = CompressImage();
     File file = await compressImage.takePicture(context);
     setState(() {
@@ -119,6 +141,10 @@ class _AddPostState extends State<AddPost> {
   }
 
   void writePost(){
+    setState(() {
+      isButtonEnable = false;
+      isProgressVisible = true;
+    });
     String desc = _controller.text;
     _imageFile != null ?
     _uploadImage(_imageFile, uid, desc).then((value){

@@ -42,7 +42,7 @@ class _NotificationsState extends State<Notifications> {
   Widget _buildListItem(BuildContext context, DocumentSnapshot data) {
     final _notifyRec = Record.fromSnapshot(data);
     return Visibility(
-      visible: _notifyRec.reference.documentID == uid,
+      visible: _notifyRec.uid == uid,
       child: Slidable(
         delegate: new SlidableDrawerDelegate(),
         actionExtentRatio: 0.25,
@@ -67,13 +67,15 @@ class _NotificationsState extends State<Notifications> {
 }
 
 class Record {
-  final String title , subtitle;
+  final String title , subtitle , uid;
   final DocumentReference reference;
 
   Record.fromMap(Map<String, dynamic> map, {this.reference})
       : assert(map['title'] != null),
         assert(map['subtitle'] != null),
+        assert(map['uid'] != null),
         title = map['title'],
+        uid = map['uid'],
         subtitle = map['subtitle'];
 
   Record.fromSnapshot(DocumentSnapshot snapshot)

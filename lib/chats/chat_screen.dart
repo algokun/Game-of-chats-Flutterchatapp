@@ -5,6 +5,8 @@ import 'package:audioplayers/audio_cache.dart';
 import 'package:flutter_chat_app/chats/chat_bubble.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:flutter_villains/villains/villains.dart';
+import 'package:clipboard_manager/clipboard_manager.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class ChatScreen extends StatefulWidget {
   String chatUserId , currentUserId , chatUserPic , chatUserName;
@@ -165,14 +167,26 @@ class _ChatScreenState extends State<ChatScreen> {
             },
           ),
         ] : null,
-        child: Container(
-          width: MediaQuery.of(context).size.width,
-          padding: EdgeInsets.all(10.0),
-          child: Bubble(
-            message: _userRec.msg,
-            delivered: true,
-            isMe: !isMe,
-            time: displayTime(_userRec.timestamp),
+        child: GestureDetector(
+          onLongPress: (){
+            ClipboardManager.copyToClipBoard(_userRec.msg).then((value){
+              Fluttertoast.showToast(
+                  msg: "Message Copied",
+                  toastLength: Toast.LENGTH_SHORT,
+                  gravity: ToastGravity.CENTER,
+                  timeInSecForIos: 1
+              );
+            });
+          },
+          child: Container(
+            width: MediaQuery.of(context).size.width,
+            padding: EdgeInsets.all(10.0),
+            child: Bubble(
+              message: _userRec.msg,
+              delivered: true,
+              isMe: !isMe,
+              time: displayTime(_userRec.timestamp),
+            ),
           ),
         ),
       )

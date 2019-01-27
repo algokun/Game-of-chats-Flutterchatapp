@@ -9,7 +9,7 @@ import 'package:flutter_chat_app/chats/chat_intro_screen.dart';
 import 'package:flutter_chat_app/notifications.dart';
 import 'package:flutter_chat_app/posts/posts.dart';
 import 'package:flutter_chat_app/chats/chat_requests.dart';
-import 'package:flutter_chat_app/chats/user_profile.dart';
+import 'package:flutter_chat_app/auth/user_profile.dart';
 import 'package:flutter_chat_app/auth/users.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:page_transition/page_transition.dart';
@@ -88,14 +88,6 @@ class _HomePageState extends State<HomePage> {
                 style: TextStyle(fontFamily: "Appfont2" , color: Colors.green , fontWeight: FontWeight.bold),
               )
           ),
-          actions: <Widget>[
-            IconButton(
-                icon: Icon(Icons.search),
-                onPressed: (){
-                },
-              color: Colors.green,
-            )
-          ],
         ),
 
         drawer: Drawer(

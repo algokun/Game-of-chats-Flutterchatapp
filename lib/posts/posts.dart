@@ -58,20 +58,20 @@ class CardTile extends StatelessWidget {
           children: <Widget>[
             Column(
               children: <Widget>[
-                Container(
-                  child: Stack(
-                    children: <Widget>[
-                      GestureDetector(
-                        onTap: (){
-                          Navigator.push(
-                              context,
-                              PageTransition(
-                                  type: PageTransitionType.fade,
-                                  child: PhotoActivity(img: postImage,) ,
-                                  duration: Duration(seconds: 1))
-                          );
-                        },
-                        child: SizedBox(
+                GestureDetector(
+                  onTap: (){
+                    Navigator.push(
+                        context,
+                        PageTransition(
+                            type: PageTransitionType.fade,
+                            child: PhotoActivity(img: postImage,) ,
+                            duration: Duration(seconds: 1))
+                    );
+                  },
+                  child: Container(
+                    child: Stack(
+                      children: <Widget>[
+                        SizedBox(
                           height: MediaQuery.of(context).size.height / 3,
                           width: double.infinity,
                           child: Image.network(
@@ -81,17 +81,17 @@ class CardTile extends StatelessWidget {
                             colorBlendMode: BlendMode.darken,
                           ),
                         ),
-                      ),
-                      Positioned(
-                        bottom: 20,
-                        left: 30,
-                        right: 30,
-                        child: Text(
-                          desc,
-                          style: Theme.of(context).textTheme.subhead.apply(color: Colors.white),
+                        Positioned(
+                          bottom: 20,
+                          left: 30,
+                          right: 30,
+                          child: Text(
+                            desc,
+                            style: Theme.of(context).textTheme.subhead.apply(color: Colors.white),
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
                 Container(
